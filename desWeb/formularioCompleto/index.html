@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Fatec</title>
+</head>
+<body>
+    <h2> Roupas XIQUE XIQUE </h2>
+    <H3> Cadastro </H3>
+    <form>
+        <fieldset>
+            <legend> Dados pessoais </legend>
+            <!--for conecta(link) id(fixo) e name(identificação do objeto, variável)-->
+            <label for="nome"> Nome </label>
+                <input type="text"
+                    id="nome"
+                    name="nomeCliente"
+                    maxlength="30"
+                    minlength="10"
+                    size="30"
+                    required>
+
+            <label for="senha"> Senha </label>
+            <input type="password" 
+                    name="password" 
+                    id="senha"
+                    maxlength="12"
+                    size="30"
+                    placeholder="Senha com letras e números">
+            <br>
+            <label for="estadoCivil"> Estado civil </label>
+            <input type="radio" name="estadoCivil" id="estadoCivil" value="solteiro">
+                <label for="solteiro">Solteiro</label>
+            <input type="radio" name="estadoCivil" id="estadoCivil" value="casado">
+                <label for="casado">Casado</label>
+            <input type="radio" name="estadoCivil" id="estadoCivil" value="conversante">
+                <label for="conversante">Conversante</label>
+            <br>
+            <label for="corFav">Cor favorita</label>
+                <input type="color" name="corFav" id="corFav">
+            <br>
+            <label for="grau">Grau de satisfação </label>
+                <input type="range" name="grau" id="grau"
+                min="0" max="10 step="1" >                
+
+                
+        </fieldset>
+        <fieldset>
+            <legend> Dados de cobrança </legend>
+
+            <label for="cidade"> Cidade </label>
+            <input type="text" 
+                id="cidade" 
+                name="cidade"
+                value="Votorantim"
+                required
+                readonly>
+                <!--value = valor inicial, padrão da variável-->
+                <br>
+            <label for="uf"> UF </label>
+            <select name="uf" id="uf">
+                    <optgroup label="Região Norte">
+                        <option value="">AM</option>
+                        <option value="">AC</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="">SC</option>
+                        <option value="">RS</option>
+                    </optgroup>
+                </select>
+                <input type="checkbox" name="Express" id="envio"
+                checked>
+                <label for="envio">Express?</label>
+                <br>
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep"
+                minlength="8"
+                maxlength="8">
+
+                <label for="phone">Celular</label>
+                <input type="cel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required>
+                
+        </fieldset>
+        <br>
+        <!--formas de criar botão -->
+        <button> Cadastrar </button>
+        <input type="submit" value="Cadastrar">
+
+    </form>
+    
+</body>
+</html>
