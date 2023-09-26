@@ -6,23 +6,53 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h2, h3 {
+h1, h2 {
     color: #59121F;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: medium;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: x-large;
 }
 
 ul, li {
     color: #313759;
-    font-size: 18px; 
+    font-size: 18px;
+    margin: 15px; 
 }
 
-header img {
+#icon {
     width: 60px;
+    height: 60px;
+    position: relative; 
+    left: 15px;
+}
+#estrelas{
+    width: 100px;
+    height: 100px;
+    position: relative; 
+}
+
+#pudim{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+#despertador{
+    width: 50px;
+    height: 50px;
+    position: relative; 
 }
 
 table {
     border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table img {
@@ -30,6 +60,7 @@ table img {
     height: 10px;
 }
 
+<<<<<<< HEAD
 main img {
     width: 50px;
     height: 50px;
@@ -44,6 +75,8 @@ main table {
     margin: 10px 0;
 }
 
+=======
+>>>>>>> dce6163e6440ab0a4d31e6e994bc9350c2046487
 footer img {
     width: 50px;
     height: 50px;
