@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <!--defer -->
+</head>
+<body>
+
+    <h2> Calculo de números </h2>
+    <label id="ln1"> Número 1 </label>
+    <input type="text" id="n1" name="vn1">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <script>
+        function somar()
+        {
+        let x = number(document.getElementById('n1').value);
+        x = x.toFixed(2) + 190; 
+        console.log("Valor de x" + x);
+        alert(x);
+        }
+    </script>
+    <!-- if (condição, expressão lógica) 
+            {console.log('V');
+            alert(x);}
+        else
+            {console.log('F');} -->
+</body>
+</html>
