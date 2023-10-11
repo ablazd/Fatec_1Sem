@@ -9,12 +9,14 @@
 
 </head>
 <body>
-    <h3> Lâmpada mágica </h3>
-    <img src="luzDesligada.gif" alt="Luz desligada" id="lampada" onmousemove="ligar()" onmouseout="desligar">
-    <button> Ligar </button>
-    <button> Desligar </button>
-    <button> Aparecer </button>
-    <button> Sumir </button>
+    <h2 id="titulo"> Lâmpada mágica </h2>
+    <img src="luzDesligada.gif" id="lampada" onmousemove="ligar()" onmouseout="desligar()">
+    <br>
+    <button onclick="ligar()"> Ligar </button>
+    <button onmousemove="desligar()"> Desligar </button>
+    <button onclick="aparecer()"> Aparecer </button>
+    <button onclick="sumir()"> Sumir </button>
+    <button onclick="alternar()"> Alternar </button>
     
 </body>
 </html>
