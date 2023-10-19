@@ -1,0 +1,15 @@
+h2{
+    color: #59121F;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section{
+    border: 1px solid  #313759;
+    display: flex;
+    flex-direction: row;
+}
