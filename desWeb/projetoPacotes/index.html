@@ -15,8 +15,20 @@
     <input type="radio" name="pacotes" value="1000"><label>Pacote 1</label>
     <input type="radio" name="pacotes" value="2000"><label>Pacote 2</label>
     <input type="radio" name="pacotes" value="3000"><label>Pacote 3</label>
+    
     <br>
-    <button onclick="calcularDesconto()">Calcular Pacote com Desconto</button>
+
+    <label>Adicionais:</label>
+    <input type="checkbox" name="adicionais" value="300">
+    <label>Alimentação</label>
+    <input type="checkbox" name="adicionais" value="150">
+    <label>Veículo</label>
+    <input type="checkbox" name="adicionais" value="50">
+    <label>Translado</label>
+    
+    <br>
+
+    <button onclick="calcularTotalViagem()">Calcular Pacote</button>
 
 </body>
 </html>

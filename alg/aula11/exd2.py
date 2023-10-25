@@ -18,4 +18,3 @@ t = tuple(primos)
 
 for x in range(len(t)):
     print(t[x], end='-')
-    
