@@ -5,6 +5,9 @@ let totalAdicionais;
 function calcularTotalViagem(){
    calcularPacote();
    calcularAdicionais();
+   let totalFinal = valorPacote + totalAdicionais;
+   nome = document.getElementById('nome').value;
+   document.getElementById('mensagem').innerHTML = (`${nome} você escolheu o pacote de ${valorPacote}, e ${totalAdicionais} de valores adicinais, totalizando ${totalFinal}.`);
 }
 
 function calcularAdicionais(){
@@ -16,7 +19,7 @@ function calcularAdicionais(){
             totalAdicionais = totalAdicionais + parseFloat(adicionais[i].value);
         }
     }
-    alert(`Adicionais: ${totalAdicionais}`);
+    // alert(`Adicionais: ${totalAdicionais}`);
 
 }
 
@@ -33,8 +36,9 @@ function calcularPacote(){
         if( pacotes[i].checked == true )
         {
             console.log(pacotes[i].value);
-            valorPacote = pacotes[i].value;
+            valorPacote = Number(pacotes[i].value);
             break;
         }
     }
 }
+
