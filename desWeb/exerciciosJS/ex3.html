@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+   
+</head>
+<body>
+
+    <h1>Calculadora de Média</h1>
+
+    <label for="nota1">Nota 1:</label>
+    <input type="text" id="nota1">
+
+    <label for="nota2">Nota 2:</label>
+    <input type="text" id="nota2">
+    <br>
+    <button onclick="calcularMediaPonderada()">Calcular</button>
+    <br>
+    <label for="resultado">Média Ponderada:</label>
+    <input type="text" id="resultado" readonly>
+
+    <script>
+        function calcularMediaPonderada() {
+            let nota1 = parseFloat(document.getElementById("nota1").value);
+            let nota2 = parseFloat(document.getElementById("nota2").value);
+
+            let mediaPonderada = (nota1 * 0.3) + (nota2 * 0.7);
+
+            document.getElementById("resultado").value = mediaPonderada.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
