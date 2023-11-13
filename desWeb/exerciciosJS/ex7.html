@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+
+<body>
+
+    <h1>Número Par ou Ímpar</h1>
+
+    <button onclick="gerarNumero()">Gerar Número</button>
+
+    <p id="numero"></p>
+    <p id="resultado"></p>
+
+    <script>
+        function gerarNumero() {
+            let numero = Math.floor(Math.random() * 100) + 1;
+
+            document.getElementById("numero").innerText = "Número: " + numero;
+
+            if (numero % 2 === 0) {
+                document.getElementById("resultado").innerText = "O número é PAR.";
+            } else {
+                document.getElementById("resultado").innerText = "O número é ÍMPAR.";
+            }
+        }
+    </script>
+
+</body>
+</html>
