@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+
+<body>
+
+    <h1>Consumo Médio de Gasolina</h1>
+
+    <label for="distancia">Distância percorrida (km):</label>
+    <input type="text" id="distancia">
+    <br>
+    <label for="volume">Volume de combustível consumido (litros):</label>
+    <input type="text" id="volume">
+    <br>
+
+    <button onclick="calcularConsumoMedio()">Calcular Consumo</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularConsumoMedio() {
+            let distancia = parseFloat(document.getElementById("distancia").value);
+            let volume = parseFloat(document.getElementById("volume").value);
+
+            let consumoMedio = distancia / volume;
+
+            document.getElementById("resultado").innerText = (`O consumo médio de gasolina é de ${consumoMedio} km/l.`);
+        }
+    </script>
+
+</body>
+</html>
