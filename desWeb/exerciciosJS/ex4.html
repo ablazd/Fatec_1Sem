@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 4</title>
+  <meta charset="UTF-8">
+  <title>Exercicio 4</title>
 </head>
 
 <body>
-    
+  <h1>Calculadora de idade</h1>
+
+  <form action="#">
+    <label for="ano_nascimento">Ano de nascimento:</label>
+    <input type="text" id="anoNascimento" name="anoNascimento" required>
+    <button onclick="calcularIdade()">Calcular</button>
+  </form>
+
+  <div id="resultados">
+    <p>Idade: <span id="idade"></span></p>
+    <p>Meses: <span id="meses"></span></p>
+    <p>Dias: <span id="dias"></span></p>
+    <p>Horas: <span id="horas"></span></p>
+    <p>Minutos: <span id="minutos"></span></p>
+    <p>Semanas: <span id="semanas"></span></p>
+    <p>Idade em 2050: <span id="idade_em_2050"></span></p>
+  </div>
+
+  <script>
+    function calcularIdade() {
+  const anoNascimento = document.getElementById("anoNascimento").value;
+
+  const anoAtual = new Date().getFullYear();
+
+  const idade = anoAtual - anoNascimento;
+
+  const meses = idade * 12;
+  const dias = meses * 30.44;
+  const horas = dias * 24;
+  const minutos = horas * 60;
+  const semanas = dias / 7;
+
+  const idadeEm2050 = 2050 - anoNascimento;
+
+  document.getElementById("idade").textContent = idade;
+  document.getElementById("meses").textContent = meses;
+  document.getElementById("dias").textContent = dias;
+  document.getElementById("horas").textContent = horas;
+  document.getElementById("minutos").textContent = minutos;
+  document.getElementById("semanas").textContent = semanas;
+  document.getElementById("idade_em_2050").textContent = idadeEm2050;
+
+}
+
+
+
+  </script>
+
 </body>
 </html>
