@@ -6,23 +6,11 @@
 </head>
 
 <body>
-  <h1>Calculadora de idade</h1>
+    <h1>Calculadora de idade</h1>
 
-  <form action="#">
     <label for="ano_nascimento">Ano de nascimento:</label>
     <input type="text" id="anoNascimento" name="anoNascimento" required>
     <button onclick="calcularIdade()">Calcular</button>
-  </form>
-
-  <div id="resultados">
-    <p>Idade: <span id="idade"></span></p>
-    <p>Meses: <span id="meses"></span></p>
-    <p>Dias: <span id="dias"></span></p>
-    <p>Horas: <span id="horas"></span></p>
-    <p>Minutos: <span id="minutos"></span></p>
-    <p>Semanas: <span id="semanas"></span></p>
-    <p>Idade em 2050: <span id="idade_em_2050"></span></p>
-  </div>
 
   <script>
     function calcularIdade() {
@@ -40,17 +28,14 @@
 
   const idadeEm2050 = 2050 - anoNascimento;
 
-  document.getElementById("idade").textContent = idade;
-  document.getElementById("meses").textContent = meses;
-  document.getElementById("dias").textContent = dias;
-  document.getElementById("horas").textContent = horas;
-  document.getElementById("minutos").textContent = minutos;
-  document.getElementById("semanas").textContent = semanas;
-  document.getElementById("idade_em_2050").textContent = idadeEm2050;
-
+  console.log(`Idade: ${idade}`)
+  console.log(`Meses: ${meses}`)
+  console.log(`Dias: ${dias}`)
+  console.log(`Horas: ${horas}`)
+  console.log(`Minutos: ${minutos}`)
+  console.log(`Semanas: ${semanas}`)
+  console.log(`Idade em 2050: ${idadeEm2050}`)
 }
-
-
 
   </script>
 
