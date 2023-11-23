@@ -1,0 +1,35 @@
+
+body{
+    background-color: #B2DAF7;
+}
+footer{
+    background-color: #4586BF;
+    margin-bottom: 10px;
+}
+h5{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.img{
+    width: 100px;
+    border: 1px solid  #0476D9;
+    border-radius: 45%;
+    display: flex;
+    flex-direction: row;
+}
+section{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.btn{
+    align-self: center;
+}
+.final{
+    background-color: #4586BF;
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
