@@ -25,10 +25,10 @@
     <nav class="navBar">
       <img src="../img/whiteLogo.png" alt="">
       <ul>
-        <li><a href="./home.html" class="barItem" onclick="paginaAtiva(home)">Home</a></li>
-        <li><a href="http://" class="barItem" onclick="paginaAtiva(sobre)">Sobre</a></li>
-        <li><a href="http://" class="barItem" onclick="paginaAtiva(parceiros)">Parceiros</a></li>
-        <li><a href="http://" class="barItem" onclick="paginaAtiva(blog)">Blog</a></li>
+        <li><a href="./home.html" class="barItem ativo">Home</a></li>
+        <li><a href="http://" class="barItem">Sobre</a></li>
+        <li><a href="http://" class="barItem">Parceiros</a></li>
+        <li><a href="./blog.html" class="barItem">Blog</a></li>
         <input type="text" placeholder="Buscar..." id="buscar" name="buscar">
         <label for="buscar"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"
             fill="none">
@@ -87,17 +87,59 @@
     </section>
     <section>
       <div class="metas">
-        <div class="metasAlcancadas">
-          <h2>Presentes em 10 estados</h2>
-          <h2>750+ contratos firmados</h2>
-          <h2>1000+ empresas cadastradas</h2>
-          <h2>1500+ empregos gerados</h2>
+        <div class="metasTexto">
+          <div>
+            <h2>Presentes em 10 estados</h2>
+            <h2>1000+ empresas cadastradas</h2>
+          </div>
+          <div>
+            <h2>750+ contratos firmados</h2>
+            <h2>1500+ empregos gerados</h2>
+          </div>
         </div>
         <button class="facaParte botaoGeral">Faça parte</button>
       </div>
     </section>
   </main>
+  
   <footer>
-
+    <div class="rodape">
+      <div class="logo">
+        <img src="../img/whiteLogoMini.png">
+      </div>
+      <div class="endereco">
+        <h4>Lumina Tech Consulting</h4>
+        <p>+55 15 99123 4567</p>
+        <p>Bandeiras Centro Empresarial</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.418295286592!2d-47.4479711!3d-23.5377324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf61dfbc55474b%3A0xae27b8a395b8398e!2sBandeiras%20Centro%20Empresarial!5e0!3m2!1spt-BR!2sbr!4v1700535792349!5m2!1spt-BR!2sbr" width="387" height="183" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapinha"></iframe>
+      </div>
+      <div class="contatos">
+        <p>+55 15 99123 4567</p>
+        <p>@luminatech</p>
+      </div>
+      <div class="inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 128 128" fill="none">
+          <g filter="url(#filter0_d_14_79)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M64 120C97.1371 120 124 93.1371 124 60C124 26.8629 97.1371 0 64 0C30.8629 0 4 26.8629 4 60C4 93.1371 30.8629 120 64 120ZM31.4286 70.2857L62.2857 37.7143L95.7143 70.2857L62.2857 56.5714L31.4286 70.2857Z" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+          </g>
+          <defs>
+            <filter id="filter0_d_14_79" x="0" y="0" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14_79"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14_79" result="shape"/>
+            </filter>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_14_79" transform="scale(0.000416667)"/>
+            </pattern>
+          </defs>
+        </svg>
+      </div>
+    </div>
   </footer>
 </body>
+</html>
