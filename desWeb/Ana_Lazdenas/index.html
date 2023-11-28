@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática</title>
+</head>
+<body>
+    <h3>Cadastro</h3>
+    <form>
+        <label for="nome"> Nome </label>
+        <input type="text" id="nome" maxlength="30" size="30" >
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <br>
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep">
+
+        <button id="pesquisa">Pesquisa</button>
+
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade">
+        <br>
+        <label for="idade">Idade</label>
+        <input type="text" name="idade" id="idade">
+        <button id="soma" onclick="soma()">Soma</button>
+        <p id="resultado"></p>
+        <br>
+        <label for="termos">Aceita os termos?</label>
+        <input type="radio" name="termos" id="sim">Sim
+        <input type="radio" name="termos" id="nao">Não
+
+    </form>
+
+    <script defer>
+        x = document.getElementById("pesquisa");
+    x.addEventListener('click', async function () {
+    let cep = document.getElementById("cep").value
+            var api = `https://viacep.com.br/ws/${cep}/json/`;
+
+            let resposta = await fetch(api);
+            let dados = await resposta.json();
+
+            document.getElementById('cidade').value = dados
+    }
+)
+function soma(){
+    var idade = getElementById('idade').value;
+    var soma = idade + 30;
+
+    alert(`Sua idade acrescida de 30 é ${soma}.`);
+}
+
+let termos = document.querySelectorAll("input[type='radio']");
+    let i = 0;
+    if (sim[i].checked){
+        alert('Cadastrado com sucesso!')
+    }
+    </script>
+</body>
+</html>
